@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const instance = axios.create({
-  baseURL: 'https://cricketgear.vercel.app',
+  baseURL: import.meta.env.VITE_API_URL,
   withCredentials: true,
 });
 
